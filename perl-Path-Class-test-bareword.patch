@@ -1,0 +1,12 @@
+diff -Nru Path-Class-0.03_01-org/t/01-basic.t Path-Class-0.03_01/t/01-basic.t
+--- Path-Class-0.03_01-org/t/01-basic.t	2003-12-12 15:50:19.824668392 +0100
++++ Path-Class-0.03_01/t/01-basic.t	2003-12-12 15:51:27.344403832 +0100
+@@ -68,7 +68,7 @@
+   ok dir(''), '/';
+   ok dir(), '.';
+   ok dir('', 'var', 'tmp'), '/var/tmp';
+-  ok dir()->absolute, Cwd::cwd;
++  ok dir()->absolute, &Cwd::cwd;
+ }
+ 
+ {

@@ -10,13 +10,13 @@
 Summary:	Path::Class - cross-platform path specification manipulation
 Summary(pl):	Path::Class - wieloplatformowe operacje na ¶cie¿kach plików
 Name:		perl-Path-Class
-Version:	0.05
+Version:	0.06
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	09a47e595b39998b2ab64904327f0958
+# Source0-md5:	9ee1c112226035144b83fb7baef90832
 BuildRequires:	perl-Module-Build >= 0.20
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13

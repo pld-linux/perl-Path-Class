@@ -10,14 +10,13 @@
 Summary:	Cross-platform path specification manipulation
 Summary(pl):	Wieloplatformowe operacje na ¶cie¿kach plików
 Name:		perl-Path-Class
-Version:	0.03_01
+Version:	0.05
 Release:	1
 # same as Perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d5531392cd65c9221e21627ef8dab2a2
-Patch0:		%{name}-test-bareword.patch
+# Source0-md5:	09a47e595b39998b2ab64904327f0958
 BuildRequires:	perl-Module-Build >= 0.20
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -50,7 +49,6 @@ ró¿nych od tych, na których testuj± kod.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
 
 %build
 %{__perl} Build.PL \

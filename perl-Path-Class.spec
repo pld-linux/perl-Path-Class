@@ -13,7 +13,7 @@ Name:		perl-Path-Class
 Version:	0.05
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	09a47e595b39998b2ab64904327f0958

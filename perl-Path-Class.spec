@@ -7,12 +7,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Path
 %define	pnam	Class
-Summary:	Cross-platform path specification manipulation
-Summary(pl):	Wieloplatformowe operacje na ¶cie¿kach plików
+Summary:	Path::Class - cross-platform path specification manipulation
+Summary(pl):	Path::Class - wieloplatformowe operacje na ¶cie¿kach plików
 Name:		perl-Path-Class
 Version:	0.05
 Release:	1
-# same as Perl
+# same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz

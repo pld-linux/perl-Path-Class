@@ -8,7 +8,7 @@
 %define		pdir	Path
 %define		pnam	Class
 Summary:	Path::Class - cross-platform path specification manipulation
-Summary(pl):	Path::Class - wieloplatformowe operacje na ¶cie¿kach plików
+Summary(pl.UTF-8):   Path::Class - wieloplatformowe operacje na Å›cieÅ¼kach plikÃ³w
 Name:		perl-Path-Class
 Version:	0.16
 Release:	1
@@ -35,17 +35,17 @@ sort of awkward to use well, so people sometimes avoid it, or use it
 in a way that won't actually work properly on platforms significantly
 different than the ones they've tested their code on.
 
-%description -l pl
-Path::Class to modu³ do operacji na specifikacjach plików i katalogów
-(³añcuchach opisuj±cych ich po³o¿enie, takich jak '/home/ken/foo.txt'
-czy 'C:\Windows\Foo.txt') w sposób wieloplatformowy. Obs³uguje
-wiêkszo¶æ platform na których dzia³a Perl, w tym: Unix, Windows, Mac,
+%description -l pl.UTF-8
+Path::Class to moduÅ‚ do operacji na specifikacjach plikÃ³w i katalogÃ³w
+(Å‚aÅ„cuchach opisujÄ…cych ich poÅ‚oÅ¼enie, takich jak '/home/ken/foo.txt'
+czy 'C:\Windows\Foo.txt') w sposÃ³b wieloplatformowy. ObsÅ‚uguje
+wiÄ™kszoÅ›Ä‡ platform na ktÃ³rych dziaÅ‚a Perl, w tym: Unix, Windows, Mac,
 VMS, Epoc, Cygwin, OS/2, NetWare.
 
-Podobne operacje s± udostêpniane przez dobrze znany modu³ File::Spec,
-ale jest on nieco niewygodny, wiêc ludzie czasem go unikaj± lub
-u¿ywaj± w sposób nie dzia³aj±cy poprawnie na platformach znacz±co
-ró¿nych od tych, na których testuj± kod.
+Podobne operacje sÄ… udostÄ™pniane przez dobrze znany moduÅ‚ File::Spec,
+ale jest on nieco niewygodny, wiÄ™c ludzie czasem go unikajÄ… lub
+uÅ¼ywajÄ… w sposÃ³b nie dziaÅ‚ajÄ…cy poprawnie na platformach znaczÄ…co
+rÃ³Å¼nych od tych, na ktÃ³rych testujÄ… kod.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

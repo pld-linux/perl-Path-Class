@@ -8,7 +8,7 @@
 %define		pdir	Path
 %define		pnam	Class
 Summary:	Path::Class - cross-platform path specification manipulation
-Summary(pl.UTF-8):   Path::Class - wieloplatformowe operacje na ścieżkach plików
+Summary(pl.UTF-8):	Path::Class - wieloplatformowe operacje na ścieżkach plików
 Name:		perl-Path-Class
 Version:	0.16
 Release:	1

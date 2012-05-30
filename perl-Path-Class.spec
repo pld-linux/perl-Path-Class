@@ -10,16 +10,21 @@
 Summary:	Path::Class - cross-platform path specification manipulation
 Summary(pl.UTF-8):	Path::Class - wieloplatformowe operacje na ścieżkach plików
 Name:		perl-Path-Class
-Version:	0.24
+Version:	0.25
 Release:	1
-# same as perl
+# same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ea0fcec77c63d833a4296ce5b27a5bf2
-BuildRequires:	perl-Module-Build >= 0.20
+# Source0-md5:	91517fdac5262e8665ae2ba9f507824b
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
+BuildRequires:	perl-Module-Build >= 0.3601
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl(File::Spec) >= 0.87
+BuildRequires:	perl-File-Temp
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -68,6 +73,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes
-%{perl_vendorlib}/Path
-%{_mandir}/man3/*
+%doc Changes README
+%dir %{perl_vendorlib}/Path
+%{perl_vendorlib}/Path/Class.pm
+%{perl_vendorlib}/Path/Class
+%{_mandir}/man3/Path::Class*.3pm*

@@ -3,10 +3,10 @@
 %bcond_with	tests	# perform "./Build test"
 			# (tests fail because our perl doesn't contain
 			# File::Spec::Win32 and other "foreign" modules)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Path
 %define		pnam	Class
+%include	/usr/lib/rpm/macros.perl
 Summary:	Path::Class - cross-platform path specification manipulation
 Summary(pl.UTF-8):	Path::Class - wieloplatformowe operacje na ścieżkach plików
 Name:		perl-Path-Class
@@ -17,6 +17,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	91517fdac5262e8665ae2ba9f507824b
+URL:		http://search.cpan.org/dist/Path-Class/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-Module-Build >= 0.3601
 BuildRequires:	perl-devel >= 1:5.8.0

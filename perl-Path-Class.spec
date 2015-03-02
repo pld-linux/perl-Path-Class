@@ -23,7 +23,7 @@ BuildRequires:	perl-Module-Build >= 0.3601
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(File::Spec) >= 0.87
+BuildRequires:	perl(File::Spec) >= 3.26
 BuildRequires:	perl-File-Temp
 %endif
 BuildArch:	noarch

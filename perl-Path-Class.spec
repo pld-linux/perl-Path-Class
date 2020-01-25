@@ -6,7 +6,6 @@
 
 %define		pdir	Path
 %define		pnam	Class
-%include	/usr/lib/rpm/macros.perl
 Summary:	Path::Class - cross-platform path specification manipulation
 Summary(pl.UTF-8):	Path::Class - wieloplatformowe operacje na ścieżkach plików
 Name:		perl-Path-Class

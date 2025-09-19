@@ -1,7 +1,7 @@
 #
 # Conditional build:
-%bcond_with	tests	# perform "./Build test"
-			# (tests fail because our perl doesn't contain
+%bcond_with	tests	# unit tests
+			# (fail on PLD because our perl doesn't contain
 			# File::Spec::Win32 and other "foreign" modules)
 
 %define		pdir	Path
@@ -14,13 +14,14 @@ Release:	1
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-authors/id/K/KW/KWILLIAMS/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	13e6db714f6d5a0e62ca1c4a7fc4d0f3
-URL:		http://search.cpan.org/dist/Path-Class/
+URL:		https://metacpan.org/dist/Path-Class
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
 BuildRequires:	perl-Module-Build >= 0.3601
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl(File::Spec) >= 3.26
 BuildRequires:	perl-File-Temp
